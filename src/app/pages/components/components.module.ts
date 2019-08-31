@@ -11,6 +11,7 @@ import { ProgressBarsComponent } from './progress-bars';
 import { SlidersComponent } from './sliders';
 import { TogglesComponent } from './toggles';
 import { TooltipsComponent } from './tooltips';
+import { TablesService } from './../ui/tables';
 
 @NgModule({
   imports: [
@@ -29,6 +30,8 @@ import { TooltipsComponent } from './tooltips';
     SlidersComponent,
     TooltipsComponent,
     BadgesComponent,
-  ],
+  ], providers: [
+    TablesService
+  ]
 })
 export class ComponentsModule { }
