@@ -41,9 +41,9 @@ export class SidebarComponent extends BaseSidebarComponent {
       { name: 'Simple map', link: '/maps/simple' },
       { name: 'Advanced map', link: '/maps/advanced' },
       ],
-    },
-    { name: 'Charts', link: '/app/charts', icon: 'multiline_chart' },
-    {
+    },*/
+    { name: 'Estatísticas', link: '/app/charts', icon: 'multiline_chart' },
+    /*{
       name: 'Pages', children: [
       { name: 'Sign in', link: '/pages/login' },
       { name: 'Sign up', link: '/pages/sign-up' },
