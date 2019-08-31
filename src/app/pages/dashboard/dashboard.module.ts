@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'app/pages/charts/charts.module'
 
 import { ThemeModule } from 'theme';
 
@@ -14,11 +15,13 @@ import { TodoListComponent } from './todo-list';
 import { TrendingComponent } from './trending';
 import { WeatherComponent } from './weather';
 
+
 @NgModule({
   imports: [
     CommonModule,
     ThemeModule,
     FormsModule,
+    ChartsModule,
   ],
   declarations: [
     DashboardComponent,

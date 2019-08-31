@@ -8,7 +8,7 @@ import { SidebarComponent as BaseSidebarComponent } from 'theme/components/sideb
   templateUrl: '../../../theme/components/sidebar/sidebar.component.html',
 })
 export class SidebarComponent extends BaseSidebarComponent {
-  public title = 'darkboard';
+  public title = 'EduTrails';
   public menu = [
     { name: 'Classic Dashboard', link: '/app/dashboard', icon: 'dashboard' },
     { name: 'Custom Dashboard', link: '/app/dashboard-custom', icon: 'view_quilt' },

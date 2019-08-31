@@ -14,6 +14,10 @@ import { CountryStatisticsChartService } from './country-statistics-chart.servic
   providers: [CountryStatisticsChartService],
 })
 export class CountryStatisticsChartComponent extends BasePieChartComponent implements OnInit {
+  
+  
+  array = [];
+  
   constructor(
     private el: ElementRef,
     private countryStatisticsChartService: CountryStatisticsChartService,
@@ -22,6 +26,9 @@ export class CountryStatisticsChartComponent extends BasePieChartComponent imple
   }
 
   public ngOnInit() {
+    
+    this.array = [1,2,3];
+
     const COLORS = {
       red: '#f44336',
       lightBlue: '#03a9f4',
@@ -44,6 +51,9 @@ export class CountryStatisticsChartComponent extends BasePieChartComponent imple
       ];
 
       const data = this.countryStatisticsChartService.getCountryStatistics();
+      const y = data[0].y;
+
+      console.log(JSON.stringify(y));
 
       nv.addGraph(() => {
         let innerRadius = 0.06;
@@ -76,7 +86,7 @@ export class CountryStatisticsChartComponent extends BasePieChartComponent imple
               return '';
             }
             d3.selectAll('.nvtooltip').classed('mdl-tooltip', true);
-            return d.data.y + '%';
+            return d.data.key+' '+ d.data.y + '%';
           });
 
         container2.append('div')
@@ -102,7 +112,7 @@ export class CountryStatisticsChartComponent extends BasePieChartComponent imple
               { inner: innerRadius, outer: outerRadius },
               { inner: innerRadius, outer: outerRadius },
             ])
-              .title(h + '%')
+              .title(y + '%')
               .update();
             innerRadius += i;
             h += 10;
@@ -121,7 +131,7 @@ export class CountryStatisticsChartComponent extends BasePieChartComponent imple
 
         const color = d3.scale.ordinal().range(colors);
 
-        const legend = container2.append('div')
+       /*  const legend = container2.append('div')
           .attr('class', 'legend')
           .selectAll('.legend__item')
           .data(data)
@@ -135,7 +145,7 @@ export class CountryStatisticsChartComponent extends BasePieChartComponent imple
 
         legend.append('div')
           .attr('class', 'legend__text')
-          .text(d => d.key);
+          .text(d => d.key); */
 
         return pieChart;
       });

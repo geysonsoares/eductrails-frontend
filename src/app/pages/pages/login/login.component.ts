@@ -44,9 +44,14 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
   public login() {
     this.error = null;
     if (this.loginForm.valid) {
-      this.authService.login(this.loginForm.getRawValue())
+
+      if(this.loginForm.value.email === 'estudante@gmail.com'){
+        this.authService.login(this.loginForm.getRawValue())
         .subscribe(res => this.router.navigate(['/app/dashboard']),
                    error => this.error = error.message);
+      }else{
+        
+      }
     }
   }
 

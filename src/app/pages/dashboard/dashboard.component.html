@@ -1,44 +1,46 @@
 <div
   class="mdl-grid mdl-cell mdl-cell--9-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone mdl-cell--top">
-  <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-    <base-card>
+
+  <!-- <div *ngFor="let id of array" class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone"> -->
+    <!-- <base-card>
       <base-card-title>
-        <h2 class="mdl-card__title-text">My Day</h2>
+        <h2 class="mdl-card__title-text">[Nome Curso]</h2>
       </base-card-title>
       <base-card-body>
-        <app-pie-chart></app-pie-chart>
+        <app-country-statistics-chart></app-country-statistics-chart>
       </base-card-body>
-    </base-card>
-  </div>
-  <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-    <app-weather></app-weather>
-  </div>
-  <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-    <app-trending></app-trending>
-  </div>
-  <div class="mdl-cell mdl-cell--5-col-desktop mdl-cell--5-col-tablet mdl-cell--2-col-phone">
-    <app-cotoneaster-card></app-cotoneaster-card>
-  </div>
-  <div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--7-col-tablet mdl-cell--4-col-phone">
-    <base-card>
-      <base-card-title>
-        <h2 class="mdl-card__title-text">Startup Financing Cycle</h2>
-      </base-card-title>
-      <base-card-body>
-        <app-line-chart></app-line-chart>
-      </base-card-body>
-    </base-card>
-  </div>
-  <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone ">
-    <app-table-card></app-table-card>
-  </div>
-</div>
-<div
-  class="mdl-grid mdl-cell mdl-cell--3-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone mdl-cell--top">
-  <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--2-col-phone">
-    <app-robot-card></app-robot-card>
-  </div>
-  <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--2-col-phone">
-    <app-todo-list></app-todo-list>
-  </div>
+      <base-card-actions>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
+          <i class="material-icons">forward</i>
+          Acessar
+        </button>
+      </base-card-actions>     
+    </base-card> -->
+    <div *ngFor="let id of array" class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+      <base-card>
+        <base-card-title>
+          <h2 class="mdl-card__title-text">[Curso]</h2>
+        </base-card-title>
+        <base-card-body expanded>
+          <small>[curso-smal]</small>
+          Tokyo, officially Tokyo Metropolis, is the capital of Japan and one of its 47 prefectures.
+          The Greater Tokyo Area is the most populous metropolitan area in the world.
+          It is the seat of the Emperor of Japan and the Japanese government.
+          <a class="color-text--light-blue" href="https://en.wikipedia.org/wiki/Tokyo" target="_blank">Wikipedia</a>
+          <br><br>
+          <b>Progresso:</b> 5°C, Wind NW at 26 km/h, 54% Humidity
+          <br>
+          <b>Local time:</b> Friday 10:04 PM
+          <br>
+          <b>Population:</b> 13.62 million (Jul 31, 2016)
+        </base-card-body>
+        <base-card-actions class="mdl-card--border">
+          <button (click)="redirecinarTrilhaCurso({id:age})" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
+            <i class="material-icons">forward</i>
+            Acessar
+          </button>
+        </base-card-actions>
+      </base-card>
+    </div>
+  <!-- </div>  -->
 </div>
