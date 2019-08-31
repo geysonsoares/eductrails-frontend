@@ -41,7 +41,7 @@ export class EstudantesComponent extends UpgradableComponent implements OnInit {
   ];
 
   selecionarTrilhaEstudante(data: number): void {
-    this.router.navigate(['/app/estudante-trilha'])
+    this.router.navigate(['/app/trilha-estudante'])
   }
 
 

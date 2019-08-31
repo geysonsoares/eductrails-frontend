@@ -10,9 +10,9 @@ import { SidebarComponent as BaseSidebarComponent } from 'theme/components/sideb
 export class SidebarComponent extends BaseSidebarComponent {
   public title = 'EduTrails';
   public menu = [
-    { name: 'Classic Dashboard', link: '/app/dashboard', icon: 'dashboard' },
-    { name: 'Custom Dashboard', link: '/app/dashboard-custom', icon: 'view_quilt' },
-    {
+    { name: 'Portal do Estudante', link: '/app/dashboard', icon: 'dashboard' },
+    { name: 'Portal do Professor', link: '/app/dashboard-custom', icon: 'view_quilt' },
+    /*{
       name: 'UI',
       children: [
         ...[
@@ -33,10 +33,10 @@ export class SidebarComponent extends BaseSidebarComponent {
         },
       ],
       icon: 'view_comfy',
-    },
-    { name: 'Components', link: '/app/components', icon: 'developer_board' },
+    },*/
+    //{ name: 'Components', link: '/app/components', icon: 'developer_board' },
     { name: 'Trilha Estudante', link: '/app/trilha-estudante', icon: 'person' },
-    {
+    /*{
       name: 'Maps', icon: 'map', children: [
       { name: 'Simple map', link: '/maps/simple' },
       { name: 'Advanced map', link: '/maps/advanced' },
@@ -51,6 +51,6 @@ export class SidebarComponent extends BaseSidebarComponent {
       { name: '404', link: '/pages/error' },
       ],
       icon: 'pages',
-    },
+    },*/
   ];
 }
