@@ -60,7 +60,7 @@ export class TablesService {
     [
       '9',
       'The Little Prince',
-      'Antoine de Saint-Exupery',
+      'Antoine de ',
       [
         'Fiction',
       ],
@@ -221,11 +221,9 @@ export class TablesService {
 
   public getHeaders() {
     return [
-      '#',
-      'Book title',
-      'Author',
-      'First published',
-      'Status',
+      'Estudante',
+      'Título Material',
+      'Baixar',
     ];
   }
 
@@ -331,31 +329,28 @@ export class TablesService {
   public getBorderlessTable() {
     return [
       [
-        '31',
-        'The Little Prince',
-        'Antoine de Saint-Exupery',
-        '1943',
+        'Deivison Guarines',
+        'Somando na fazenda',
         'available',
       ],
       [
-        '32',
-        'Les Miserables',
-        'Victor Hugo',
-        '1862',
+        'Tyago Tyrone',
+        'Subtrair é fácil',
         'unavailable',
       ],
       [
-        '33',
-        'Alice in Wonderland',
-        'Lewis Carroll',
-        '1865',
+        'Rafael Garcia',
+        'Analise de Dados apenas com soma',
         'available',
       ],
       [
-        '34',
-        'Anne of Green Gables',
-        'L.M. Montgomery',
-        '1908',
+        'Rafael Duarte',
+        'sem titulo',
+        'available',
+      ],
+      [
+        'Geyson Soares',
+        'Soma/Subtração',
         'available',
       ],
     ];
