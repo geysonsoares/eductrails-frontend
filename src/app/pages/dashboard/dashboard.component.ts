@@ -1,5 +1,6 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UpgradableComponent } from 'theme/components/upgradable';
 
 @Component({
@@ -7,9 +8,13 @@ import { UpgradableComponent } from 'theme/components/upgradable';
   styleUrls: ['../charts/charts.component.scss'],
   templateUrl: './dashboard.component.html',
 })
-export class DashboardComponent extends UpgradableComponent {
+export class DashboardComponent extends UpgradableComponent implements OnInit {
   @HostBinding('class.mdl-grid') private readonly mdlGrid = true;
   @HostBinding('class.mdl-grid--no-spacing') private readonly mdlGridNoSpacing = true;
+
+  constructor(private router: Router) {
+      super();
+  } 
 
   array = [{
     guid: '900ea552-ef68-42cc-b6a6-b8c4dff10fb7',
@@ -27,7 +32,13 @@ export class DashboardComponent extends UpgradableComponent {
     name: 'Boyer Stanley',
   },]
 
-  redirecinarTrilhaCurso(age){
-    console.log('REDIRECIONA ' + age);
+  public ngOnInit() {
+  }
+
+  redirecinarTrilhaCurso(){
+
+    this.router.navigate(['/app/trilha-estudante']);
+
+    ///app/trilha-estudante
   }
 }
