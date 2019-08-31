@@ -1,34 +1,70 @@
-<base-right-sidebar-layout>
-  <base-right-sidebar-content>
-    <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12">
-        <app-map-advanced></app-map-advanced>
-      </div>
-
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--5-col-tablet mdl-cell--12-col-phone">
-        <base-card>
-          <base-card-title>
-            <h2 class="mdl-card__title-text">Country Statistics</h2>
-          </base-card-title>
-          <base-card-body>
-            <app-country-statistics-chart></app-country-statistics-chart>
-          </base-card-body>
-        </base-card>
-      </div>
-
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--5-col-tablet mdl-cell--12-col-phone">
-        <app-weather></app-weather>
-      </div>
-
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone">
-        <app-trending></app-trending>
-      </div>
+<div
+  class="mdl-grid mdl-cell mdl-cell--9-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone mdl-cell--top">
+    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+      <base-card>
+        <base-card-title>
+          <h2 class="mdl-card__title-text">Matemática</h2>
+        </base-card-title>
+        <base-card-body expanded>
+          <small>Curso de matemática básica</small>
+          Este curso irá abordar diversos tópicos relacionados a disciplina de matemática ......
+          <br><br>
+          <b>Quantidade de estudantes :</b> 2
+          <br>
+          <b>Progresso geral dos estudantes:</b> 60%
+        </base-card-body>
+        <base-card-actions class="mdl-card--border">
+          <button (click)="redirecinarTrilhaCurso({id:age})" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
+            <i class="material-icons">forward</i>
+            Visualizar Participantes
+          </button>
+        </base-card-actions>
+      </base-card>
     </div>
-  </base-right-sidebar-content>
 
-  <base-right-sidebar [title]="'Filters'">
-    <app-filters></app-filters>
-  </base-right-sidebar>
+    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+      <base-card>
+        <base-card-title>
+          <h2 class="mdl-card__title-text">Física</h2>
+        </base-card-title>
+        <base-card-body expanded>
+          <small>Curso de física mecânica</small>
+          Este curso irá abordar diversos tópicos relacionados a disciplina de física ......
+          <br><br>
+          <b>Quantidade de estudantes :</b> 10
+          <br>
+          <b>Progresso geral dos estudantes:</b> 45%
+        </base-card-body>
+        <base-card-actions class="mdl-card--border">
+          <button (click)="redirecinarTrilhaCurso({id:age})" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
+            <i class="material-icons">forward</i>
+            Visualizar Participantes
+          </button>
+        </base-card-actions>
+      </base-card>
+    </div>
 
-</base-right-sidebar-layout>
-
+    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+      <base-card>
+        <base-card-title>
+          <h2 class="mdl-card__title-text">Filosofia</h2>
+        </base-card-title>
+        <base-card-body expanded>
+          <small>Curso de filosofia</small>
+          Este curso irá abordar diversos tópicos relacionados a disciplina de fisolofia ......
+          <br><br>
+          <b>Quantidade de estudantes :</b> 1
+          <br>
+          <b>Progresso geral dos estudantes:</b> 100%
+        </base-card-body>
+        <base-card-actions class="mdl-card--border">
+          <button (click)="participantes()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
+            <i class="material-icons">forward</i>
+            Visualizar Participantes
+          </button>
+          
+        </base-card-actions>
+      </base-card>
+    </div>    
+  <!-- </div>  -->
+</div>
