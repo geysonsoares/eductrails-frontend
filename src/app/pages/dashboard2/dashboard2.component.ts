@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { UpgradableComponent } from 'theme/components/upgradable';
 
@@ -7,5 +8,18 @@ import { UpgradableComponent } from 'theme/components/upgradable';
   styleUrls: ['./dashboard2.component.scss'],
   templateUrl: './dashboard2.component.html',
 })
-export class Dashboard2Component extends UpgradableComponent {
+export class Dashboard2Component extends UpgradableComponent implements OnInit {
+
+  constructor (private router: Router){
+    super();
+  }
+  
+  public ngOnInit() { }
+
+  participantes() : void {
+    this.router.navigate(['/app/estudantes'])
+  }
+  
+ 
+
 }

@@ -8,6 +8,8 @@ import { ComponentsComponent } from './pages/components';
 import { DashboardComponent } from './pages/dashboard';
 import { Dashboard2Component } from './pages/dashboard2';
 import { FormsComponent } from './pages/forms';
+import { EstudantesComponent } from './pages/estudantes';
+import { EstudanteTrilhaComponent } from './pages/estudante-trilha';
 
 @NgModule({
   imports: [
@@ -17,6 +19,8 @@ import { FormsComponent } from './pages/forms';
         { path: 'app', component: CommonLayoutComponent, children: [
           { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
           { path: 'dashboard-custom', component: Dashboard2Component, pathMatch: 'full' },
+          { path: 'estudantes', component: EstudantesComponent, pathMatch: 'full' },
+          { path: 'estudante-trilha', component: EstudanteTrilhaComponent, pathMatch: 'full' },
           { path: 'forms', component: FormsComponent, pathMatch: 'full' },
           { path: 'charts', component: ChartsComponent, pathMatch: 'full' },
           { path: 'components', component: ComponentsComponent, pathMatch: 'full' },

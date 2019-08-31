@@ -10,6 +10,8 @@ import { ChartsModule } from './pages/charts';
 import { ComponentsModule } from './pages/components';
 import { DashboardModule } from './pages/dashboard';
 import { Dashboard2Module } from './pages/dashboard2';
+import { EstudantesModule } from './pages/estudantes';
+import { EstudanteTrilhaModule } from './pages/estudante-trilha';
 import { FormsModule } from './pages/forms';
 
 @NgModule({
@@ -23,6 +25,8 @@ import { FormsModule } from './pages/forms';
     FormsModule,
     ChartsModule,
     HttpClientModule,
+    EstudantesModule,
+    EstudanteTrilhaModule
   ],
   providers: [
     AuthService,

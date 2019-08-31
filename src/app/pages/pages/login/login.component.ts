@@ -50,7 +50,9 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
         .subscribe(res => this.router.navigate(['/app/dashboard']),
                    error => this.error = error.message);
       }else{
-        
+        this.authService.login(this.loginForm.getRawValue())
+        .subscribe(res => this.router.navigate(['/app/dashboard-custom']),
+                   error => this.error = error.message);
       }
     }
   }
