@@ -19,7 +19,7 @@ import { FormsComponent } from './pages/forms';
           { path: 'dashboard-custom', component: Dashboard2Component, pathMatch: 'full' },
           { path: 'trilha-estudante', component: FormsComponent, pathMatch: 'full' },
           { path: 'charts', component: ChartsComponent, pathMatch: 'full' },
-          { path: 'components', component: ComponentsComponent, pathMatch: 'full' },
+          { path: 'acessar-conteudo', component: ComponentsComponent, pathMatch: 'full' },
           { path: '**', redirectTo: '/pages/404' },
         ] }, // add 'canActivate: AuthGuard' for catching unauth users
         { path: 'ui', loadChildren: './pages/ui/ui.module#UIModule' },
