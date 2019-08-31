@@ -32,12 +32,12 @@ export class LinePlusBarChartComponent implements OnInit {
         .map((values, i) => ({
           ...[
             {
-              key: 'Quantity',
+              key: 'Aulas assistidas',
               bar: true,
               color: '#00bcd4',
             },
             {
-              key: 'Price',
+              key: 'Finalização do curso',
               color: '#ffc107',
             },
           ][i],
@@ -66,7 +66,7 @@ export class LinePlusBarChartComponent implements OnInit {
 
         chart.y2Axis
           .showMaxMin(false)
-          .tickFormat(d => `\$${d3.format(',f')(d)}`);
+          .tickFormat(d => `${d3.format(',f')(d)}`);
 
         chart.tooltip
           .contentGenerator((d) => {
@@ -75,9 +75,9 @@ export class LinePlusBarChartComponent implements OnInit {
             }
             d3.selectAll('.nvtooltip').classed('mdl-tooltip', true);
             if (d.hasOwnProperty('point')) {
-              return d3.time.format('%x')(new Date(d.value)) + '<br>Price: $' + d.series[0].value;
+              return d3.time.format('%x')(new Date(d.value)) + '<br>Atividades Realizadas: ' + d.series[0].value;
             }
-            return d3.time.format('%x')(new Date(d.value)) + '<br>Quantity: ' + d.series[0].value;
+            return d3.time.format('%x')(new Date(d.value)) + '<br>Aulas Assistidas: ' + d.series[0].value;
           });
 
         container.append('svg')

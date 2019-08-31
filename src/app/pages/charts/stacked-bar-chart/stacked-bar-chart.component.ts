@@ -28,15 +28,15 @@ export class StackedBarChartComponent implements OnInit {
         .map((values, i) => ({
           ...[
             {
-              key: 'Book1',
+              key: 'Avaliação 1',
               color: '#00bcd4',
             },
             {
-              key: 'Book2',
+              key: 'Avaliação 2',
               color: '#ffc107',
             },
             {
-              key: 'Book3',
+              key: 'Avaliação 3',
               color: '#ff5252',
             },
           ][i],

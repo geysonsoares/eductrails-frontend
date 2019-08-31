@@ -5,31 +5,31 @@ export class DiscreteBarChartService {
   public getCumulativeReturn() {
     return [
       {
-        label: 'Option 1',
-        value: 22,
+        label: 'Atividade 1',
+        value: 5.4,
       },
       {
-        label: 'Option 2',
-        value: 31,
+        label: 'Atividade 2',
+        value: 6.5,
       },
       {
-        label: 'Option 3',
-        value: -5,
+        label: 'Atividade 3',
+        value: 9.0,
       },
       {
-        label: 'Option 4',
-        value: 16,
+        label: 'Atividade 4',
+        value: 5.4,
       },
       {
-        label: 'Option 5',
-        value: 19,
+        label: 'Atividade 5',
+        value: 8.7,
       },
       {
-        label: 'Option 6',
-        value: 26,
+        label: 'Atividade 6',
+        value: 6.4,
       },
       {
-        label: 'Option 7',
+        label: 'Atividade 7',
         value: 9,
       },
     ];

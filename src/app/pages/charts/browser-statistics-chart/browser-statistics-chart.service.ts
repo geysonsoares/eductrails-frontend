@@ -5,25 +5,21 @@ export class BrowserStatisticsChartService {
   public getBrowserStatistics() {
     return [
       {
-        key: 'Chrome',
+        key: 'Finalizou',
         y: 42,
       },
       {
-        key: 'Opera',
-        y: 13,
+        key: 'Fazendo',
+        y: 30,
       },
       {
-        key: 'Safari',
-        y: 14,
-      },
-      {
-        key: 'Firefox',
+        key: 'Parado',
         y: 17,
       },
       {
-        key: 'IE & Edge',
-        y: 16,
-      },
+        key: 'Não começou',
+        y: 13,
+      }
     ];
   }
 }
