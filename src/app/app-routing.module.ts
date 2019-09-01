@@ -11,6 +11,7 @@ import { FormsComponent } from './pages/forms';
 import { EstudantesComponent } from './pages/estudantes';
 import { EstudanteTrilhaComponent } from './pages/estudante-trilha';
 import { NovaAulaComponent } from './pages/novaAula';
+import { AvaliacaoComponent } from './pages/avaliacao_aula';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { NovaAulaComponent } from './pages/novaAula';
           { path: 'estudantes', component: EstudantesComponent, pathMatch: 'full' },
           { path: 'estudante-trilha', component: EstudanteTrilhaComponent, pathMatch: 'full' },
           { path: 'forms', component: FormsComponent, pathMatch: 'full' },
+          { path: 'avaliacao', component: AvaliacaoComponent, pathMatch: 'full' },
           { path: 'charts', component: ChartsComponent, pathMatch: 'full' },
           { path: 'acessar-conteudo', component: ComponentsComponent, pathMatch: 'full' },
           { path: 'nova-aula', component: NovaAulaComponent, pathMatch: 'full' },

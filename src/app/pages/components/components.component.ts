@@ -96,4 +96,8 @@ export class ComponentsComponent extends UpgradableComponent {
       image: 'tudyk.png',
     },
   ];
+
+  redirecionaEtapaMonitoramento(){
+    this.router.navigate(['/app/avaliacao']);
+  }
 }
