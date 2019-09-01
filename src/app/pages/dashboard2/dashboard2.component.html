@@ -1,70 +1,24 @@
 <div
   class="mdl-grid mdl-cell mdl-cell--9-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone mdl-cell--top">
-    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-      <base-card>
-        <base-card-title>
-          <h2 class="mdl-card__title-text">Matemática</h2>
-        </base-card-title>
-        <base-card-body expanded>
-          <small>Curso de matemática básica</small>
-          Este curso irá abordar diversos tópicos relacionados a disciplina de matemática ......
-          <br><br>
-          <b>Quantidade de estudantes :</b> 2
-          <br>
-          <b>Progresso geral dos estudantes:</b> 60%
-        </base-card-body>
-        <base-card-actions class="mdl-card--border">
-          <button (click)="redirecinarTrilhaCurso({id:age})" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
-            <i class="material-icons">forward</i>
-            Visualizar Participantes
-          </button>
-        </base-card-actions>
-      </base-card>
-    </div>
 
-    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+    <div *ngFor="let curso of cursos" class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
       <base-card>
         <base-card-title>
-          <h2 class="mdl-card__title-text">Física</h2>
+          <h2 class="mdl-card__title-text">{{ curso.nome }}</h2>
         </base-card-title>
         <base-card-body expanded>
-          <small>Curso de física mecânica</small>
-          Este curso irá abordar diversos tópicos relacionados a disciplina de física ......
-          <br><br>
-          <b>Quantidade de estudantes :</b> 10
+          <b>{{curso.qtdAulas}} Aulas</b> | <b>{{curso.horas}} Horas</b>
           <br>
-          <b>Progresso geral dos estudantes:</b> 45%
-        </base-card-body>
-        <base-card-actions class="mdl-card--border">
-          <button (click)="redirecinarTrilhaCurso({id:age})" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
-            <i class="material-icons">forward</i>
-            Visualizar Participantes
-          </button>
-        </base-card-actions>
-      </base-card>
-    </div>
-
-    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-      <base-card>
-        <base-card-title>
-          <h2 class="mdl-card__title-text">Filosofia</h2>
-        </base-card-title>
-        <base-card-body expanded>
-          <small>Curso de filosofia</small>
-          Este curso irá abordar diversos tópicos relacionados a disciplina de fisolofia ......
-          <br><br>
-          <b>Quantidade de estudantes :</b> 1
+          {{ curso.descricao }}
           <br>
-          <b>Progresso geral dos estudantes:</b> 100%
-        </base-card-body>
-        <base-card-actions class="mdl-card--border">
-          <button (click)="participantes()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
-            <i class="material-icons">forward</i>
-            Visualizar Participantes
-          </button>
           
+        </base-card-body>
+        <base-card-actions class="mdl-card--border">
+          <button (click)="participantes(curso.id)" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
+            <i class="material-icons">forward</i>
+            Acessar
+          </button>
         </base-card-actions>
       </base-card>
-    </div>    
-  <!-- </div>  -->
+    </div>
 </div>

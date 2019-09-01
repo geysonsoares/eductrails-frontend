@@ -7,7 +7,7 @@
         </base-card-title>
         <base-card-body class="md1-card__supporting-text">
           <ul class="mdl-list">
-            <li *ngFor="let item of data; let i = index" class="mdl-list__item mdl-list__item--two-line" (click)="selecionarTrilhaEstudante(item.id);">
+            <li *ngFor="let item of lista; let i = index" class="mdl-list__item mdl-list__item--two-line" (click)="selecionarTrilhaEstudante(item.id);">
               <span class="mdl-list__item-primary-content list__item-text">
                 <div class="mdl-list__item-avatar">
                   <img width="100%" src="assets/images/{{ item.image }}">
@@ -21,10 +21,6 @@
                 </span>
                 
               </span>
-              <!-- <span class="mdl-list__item-secondary-content">
-                <span *ngIf="i === 0" class="mdl-list__item-secondary-info">Trilha </span>
-                <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-              </span> -->
             </li>
           </ul>
         </base-card-body>

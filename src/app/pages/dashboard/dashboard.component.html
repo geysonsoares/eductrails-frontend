@@ -1,38 +1,17 @@
 <div
   class="mdl-grid mdl-cell mdl-cell--9-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone mdl-cell--top">
 
-  <!-- <div *ngFor="let id of array" class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone"> -->
-    <!-- <base-card>
-      <base-card-title>
-        <h2 class="mdl-card__title-text">[Nome Curso]</h2>
-      </base-card-title>
-      <base-card-body>
-        <app-country-statistics-chart></app-country-statistics-chart>
-      </base-card-body>
-      <base-card-actions>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
-          <i class="material-icons">forward</i>
-          Acessar
-        </button>
-      </base-card-actions>     
-    </base-card> -->
-    <div *ngFor="let id of array" class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+    <div *ngFor="let curso of cursos" class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
       <base-card>
         <base-card-title>
-          <h2 class="mdl-card__title-text">[Curso]</h2>
+          <h2 class="mdl-card__title-text">{{ curso.nome }}</h2>
         </base-card-title>
         <base-card-body expanded>
-          <small>[curso-smal]</small>
-          Tokyo, officially Tokyo Metropolis, is the capital of Japan and one of its 47 prefectures.
-          The Greater Tokyo Area is the most populous metropolitan area in the world.
-          It is the seat of the Emperor of Japan and the Japanese government.
-          <a class="color-text--light-blue" href="https://en.wikipedia.org/wiki/Tokyo" target="_blank">Wikipedia</a>
-          <br><br>
-          <b>Progresso:</b> 5°C, Wind NW at 26 km/h, 54% Humidity
+          <b>{{curso.qtdAulas}} Aulas</b> | <b>{{curso.horas}} Horas</b>
           <br>
-          <b>Local time:</b> Friday 10:04 PM
+          {{ curso.descricao }}
           <br>
-          <b>Population:</b> 13.62 million (Jul 31, 2016)
+          
         </base-card-body>
         <base-card-actions class="mdl-card--border">
           <button (click)="redirecinarTrilhaCurso({id:age})" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-teal">
@@ -42,5 +21,4 @@
         </base-card-actions>
       </base-card>
     </div>
-  <!-- </div>  -->
 </div>

@@ -16,20 +16,17 @@ export class DashboardComponent extends UpgradableComponent implements OnInit {
       super();
   } 
 
-  array = [{
-    guid: '900ea552-ef68-42cc-b6a6-b8c4dff10fb7',
-    age: 32,
-    name: 'Powers Schneider',
+  cursos = [{
+    nome: 'Desenvolvimento Web Completo 2019 - 20 cursos + 20 projetos',
+    descricao: 'Domine e aplique em projetos práticos as maiores e principais tecnologias de desenvolvimento web do mercado.',
+    qtdAulas: 20,
+    horas: 6
   },
   {
-    guid: '880381d3-8dca-4aed-b207-b3b4e575a15f',
-    age: 25,
-    name: 'Adrian Lawrence',
-  },
-  {
-    guid: '87b47684-c465-4c51-8c88-3f1a1aa2671b',
-    age: 32,
-    name: 'Boyer Stanley',
+    nome: 'Matemática Básica para ENEM e Concursos Públicos',
+    descricao: 'Mais de 1900 alunos satisfeitos! Veja os vídeos liberados para entender como funciona',
+    qtdAulas: 105,
+    horas: 36
   },]
 
   public ngOnInit() {
