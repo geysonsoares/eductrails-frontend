@@ -34,6 +34,6 @@ export class DashboardComponent extends UpgradableComponent implements OnInit {
 
   redirecinarTrilhaCurso(){
 
-    this.router.navigate(['/app/trilha-estudante']);
+    this.router.navigate(['/app/trilha-estudante', {acessoPeloProfessor : false}]);
   }
 }

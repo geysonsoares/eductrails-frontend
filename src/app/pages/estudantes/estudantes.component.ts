@@ -94,6 +94,6 @@ export class EstudantesComponent extends UpgradableComponent implements OnInit {
   private data = new Map([[1, this.estudantes1], [2, this.estudantes2]]);
 
   selecionarTrilhaEstudante(data: number): void {
-    this.router.navigate(['/app/trilha-estudante'])
+    this.router.navigate(['/app/trilha-estudante', { acessoPeloProfessor: true }])
   }
 }

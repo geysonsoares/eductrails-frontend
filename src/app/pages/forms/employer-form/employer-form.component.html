@@ -134,7 +134,7 @@ equações lineares e Homogêneas
           </div>
           <div class="line"></div>
         </li>
-        <li class="timeline-inverted">
+        <li class="timeline-inverted" *ngIf="isAcessoPeloProfessor()">
             <div class="timeline-image">
               <img class="img-circle img-responsive" (click)="cadastrarNovaAula()"
                    src="https://static.vecteezy.com/system/resources/previews/000/582/052/non_2x/plus-icon-vector-illustration.jpg" style="height:186px; width:186px; background: white; cursor: pointer;">
