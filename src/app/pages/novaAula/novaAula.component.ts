@@ -5,14 +5,14 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-estudante',
-  styleUrls: ['./estudantes.component.scss'],
-  templateUrl: './estudantes.component.html',
+  styleUrls: ['./novaAula.component.scss'],
+  templateUrl: './novaAula.component.html',
 })
-export class EstudantesComponent extends UpgradableComponent implements OnInit {
+export class NovaAulaComponent extends UpgradableComponent implements OnInit {
 
   public ngOnInit() { }
 
-  constructor (private router: Router) {
+  constructor (private router: Router){
     super();
   }
 

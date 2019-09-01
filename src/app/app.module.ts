@@ -13,6 +13,7 @@ import { Dashboard2Module } from './pages/dashboard2';
 import { EstudantesModule } from './pages/estudantes';
 import { EstudanteTrilhaModule } from './pages/estudante-trilha';
 import { FormsModule } from './pages/forms';
+import { NovaAulaModule } from './pages/novaAula';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +27,8 @@ import { FormsModule } from './pages/forms';
     ChartsModule,
     HttpClientModule,
     EstudantesModule,
-    EstudanteTrilhaModule
+    EstudanteTrilhaModule,
+    NovaAulaModule
   ],
   providers: [
     AuthService,

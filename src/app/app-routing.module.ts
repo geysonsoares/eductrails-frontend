@@ -10,6 +10,7 @@ import { Dashboard2Component } from './pages/dashboard2';
 import { FormsComponent } from './pages/forms';
 import { EstudantesComponent } from './pages/estudantes';
 import { EstudanteTrilhaComponent } from './pages/estudante-trilha';
+import { NovaAulaComponent } from './pages/novaAula';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { EstudanteTrilhaComponent } from './pages/estudante-trilha';
           { path: 'forms', component: FormsComponent, pathMatch: 'full' },
           { path: 'charts', component: ChartsComponent, pathMatch: 'full' },
           { path: 'acessar-conteudo', component: ComponentsComponent, pathMatch: 'full' },
+          { path: 'nova-aula', component: NovaAulaComponent, pathMatch: 'full' },
           { path: '**', redirectTo: '/pages/404' },
         ] }, // add 'canActivate: AuthGuard' for catching unauth users
         { path: 'ui', loadChildren: './pages/ui/ui.module#UIModule' },
