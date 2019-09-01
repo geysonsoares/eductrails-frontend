@@ -41,9 +41,8 @@ export class NovaAulaComponent extends UpgradableComponent implements OnInit {
     },
   ];
 
-  selecionarTrilhaEstudante(data: number): void {
+  cadastrarNovaAula(): void {
     this.router.navigate(['/app/trilha-estudante'])
   }
-
 
 }
