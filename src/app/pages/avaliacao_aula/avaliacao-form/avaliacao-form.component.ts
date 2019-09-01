@@ -13,4 +13,9 @@ export class AvaliacaoFormComponent{
   constructor(private router: Router) {
   }
   
+  redirecinarTrilhaCurso(){
+
+    localStorage.setItem('questionarioRespondido', 'true');
+    this.router.navigate(['/app/trilha-estudante']);
+  }
 }

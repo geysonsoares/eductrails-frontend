@@ -247,7 +247,7 @@
         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="isInfoReliable">
           <input #isInfoReliable type="checkbox" id="isInfoReliable" class="mdl-checkbox__input" required/> Terminou a prova?
         </label>
-        <button [disabled]="!isInfoReliable.checked" id="submit_button" 
+        <button [disabled]="!isInfoReliable.checked" id="submit_button"(click)="redirecinarTrilhaCurso()"
                 class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
           Finalizar
         </button>
