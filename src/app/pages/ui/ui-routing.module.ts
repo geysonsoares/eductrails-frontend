@@ -19,7 +19,7 @@ import { TypographyComponent } from './typography';
         path: '',
         component: CommonLayoutComponent,
         children: [
-          { path: 'buttons', component: ButtonsComponent, pathMatch: 'full' },
+          { path: 'etapa-monitoramento', component: ButtonsComponent, pathMatch: 'full' },
           { path: 'cards', component: CardsComponent, pathMatch: 'full' },
           { path: 'colors', component: ColorsComponent, pathMatch: 'full' },
           { path: 'forms', component: FormsComponent, pathMatch: 'full' },
