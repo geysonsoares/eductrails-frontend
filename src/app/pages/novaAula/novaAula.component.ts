@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 import { UpgradableComponent } from 'theme/components/upgradable';
 import { Router } from '@angular/router';
@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './novaAula.component.html',
 })
 export class NovaAulaComponent extends UpgradableComponent implements OnInit {
+  @HostBinding('class.avaliacao-form') private readonly avaliacaoForm = true;
 
   public ngOnInit() { }
 
