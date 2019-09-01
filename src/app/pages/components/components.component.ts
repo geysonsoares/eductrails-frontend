@@ -2,6 +2,7 @@ import { Component, HostBinding } from '@angular/core';
 
 import { UpgradableComponent } from 'theme/components/upgradable';
 import { TablesService } from '../ui/tables';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-components',
@@ -22,7 +23,7 @@ export class ComponentsComponent extends UpgradableComponent {
   @HostBinding('class.mdl-cell--top') private readonly mdlCellTop = true;
   @HostBinding('class.ui-tables') private readonly uiTables = true;
 
-  public constructor(private tablesService: TablesService) {
+  public constructor(private tablesService: TablesService, private router: Router) {
     super();
   }
 
@@ -74,7 +75,9 @@ export class ComponentsComponent extends UpgradableComponent {
     }
   }
 
-
+  selecionarAula(): void {
+    this.router.navigate(['/app/acessar-conteudo'])
+  }
 
   private data = [
     {
@@ -93,4 +96,8 @@ export class ComponentsComponent extends UpgradableComponent {
       image: 'tudyk.png',
     },
   ];
+
+  redirecionaEtapaMonitoramento(){
+    this.router.navigate(['/app/avaliacao']);
+  }
 }

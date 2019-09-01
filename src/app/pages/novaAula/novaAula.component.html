@@ -1,0 +1,55 @@
+<base-card>
+  <base-card-title>
+    <h2> Criando uma Nova Aula </h2>
+    <div class="mdl-card__subtitle"> Caro instrutor, preencha as informações da sua aula </div>
+  </base-card-title>
+  <base-card-body>
+  
+    <form action="#" class="form">
+      <div class="form__article">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone form__article">
+              <h3 class="text-color--smooth-gray">Informações da aula</h3>
+
+              <div class="form__article employer-form__contacts">
+              <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--9-col input-group">
+                    <div class="mdl-textfield mdl-js-textfield pull-left">
+                      <input class="mdl-textfield__input" type="text" id="skype"/>
+                      <label class="mdl-textfield__label" for="skype">Título da aula</label>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+              <div class="form__article">
+                  <div class="form__article employer-form__general_skills">
+                      <h3> 
+                          Conteúdo da aula
+                      </h3>
+                              
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <textarea class="mdl-textfield__input" type="text" rows="3" id="AboutMe" style="width: 500px;"></textarea>
+                          <label class="mdl-textfield__label" for="AboutMe">
+                              conteúdo resumido da aula
+                          </label>
+                        </div>
+                    </div>
+              </div>
+
+              <li class="mdl-list__item"><button
+                  class="mdl-button mdl-js-button mdl-js-ripple-effect button--colored-green"
+                  data-upgraded=",MaterialButton,MaterialRipple"><i class="material-icons">attach_file</i> Adicionar
+                  material <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating"
+                      style="width: 252.837px; height: 252.837px; transform: translate(-50%, -50%) translate(89px, 19px);"></span></span></button>
+              </li>
+            </div>
+          </div>
+
+          <div class="form__action">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="submit_button" data-upgraded=",MaterialButton"> Salvar </button>
+          </div>
+        </div>
+    </form>
+  </base-card-body>
+</base-card>
