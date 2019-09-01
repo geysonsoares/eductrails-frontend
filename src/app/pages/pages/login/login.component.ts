@@ -27,7 +27,7 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
       email: new FormControl('', [
         Validators.required,
         Validators.pattern(this.emailPattern),
-        Validators.maxLength(20),
+        Validators.maxLength(50),
       ]),
     });
     this.email = this.loginForm.get('email');
@@ -45,11 +45,17 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
     this.error = null;
     if (this.loginForm.valid) {
 
-      if(this.loginForm.value.email === 'estudante@gmail.com'){
+      if(this.loginForm.value.email === 'participante@gmail.com'){
         this.authService.login(this.loginForm.getRawValue())
         .subscribe(res => this.router.navigate(['/app/dashboard']),
                    error => this.error = error.message);
-      }else{
+      }
+      else if(this.loginForm.value.email === 'instrutor@gmail.com'){
+        this.authService.login(this.loginForm.getRawValue())
+        .subscribe(res => this.router.navigate(['/app/dashboard-custom']),
+                   error => this.error = error.message);
+      }
+      else {
         this.authService.login(this.loginForm.getRawValue())
         .subscribe(res => this.router.navigate(['/app/dashboard-custom']),
                    error => this.error = error.message);
